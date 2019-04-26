@@ -1,0 +1,30 @@
+
+public class Order{
+    private final double price;
+    private final int quantity;
+    private final TradeType type;
+    private final int orderID;
+
+    public Order(double price, int quantity, TradeType type, int orderID) {
+        this.price = price;
+        this.quantity = quantity;
+        this.type = type;
+        this.orderID = GenerateRandom.generateNextID();
+    }
+
+    public int getOrderID() {
+        return orderID;
+    }
+
+    public double getPrice() {
+        return price;
+    }
+
+    public int getQuantity() {
+        return quantity;
+    }
+
+    public TradeType getType() {
+        return type;
+    }
+}
